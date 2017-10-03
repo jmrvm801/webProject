@@ -1,0 +1,102 @@
+<!doctype html>
+<html ng-app="core">
+	<head>
+		<meta charset="utf-8"> 
+		<title>FE World Bank</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+   		<script src="assets/lib/rzslider.js"></script>
+    	<script src="assets/lib/ngDialog.min.js"></script>
+    	<script src="assets/lib/multiple-select.js"></script>
+    	<link rel="stylesheet" href="assets/css/client.css" type="text/css" media="screen" />
+    	<link rel="stylesheet" href="assets/css/rzslider.css" type="text/css" media="screen" />
+    	<link rel="stylesheet" href="assets/css/ngDialog.min.css" type="text/css" media="screen" />
+    	<link rel="stylesheet" href="assets/css/ngDialog-theme-default.css" type="text/css" media="screen" />
+    	<link rel="stylesheet" href="assets/css/multiple-select.min.css" type="text/css" media="screen" />
+    	<script src="assets/lib/d3.v3.min.js"></script>
+		<script src="assets/lib/nv.d3.js"></script>
+		<script src="assets/lib/angular.nv.d3.js"></script>
+		<link rel="stylesheet" href="assets/css/nv.d3.css">
+		<script src="assets/js/client.js"></script>
+		<script src="services/chartData.js"></script>
+		<script src="services/indicators.js"></script>
+		<script src="controllers/form.js"></script>
+		<script src="controllers/graphic.js"></script>
+	</head>
+	<body>
+		<script type="text/ng-template" id="emptyData">
+			<h3 style="color:#F44336;">Please choose at least a country and an indicator</h3>
+		</script>
+		<header class="top">
+			<div class="t-margin">
+				<div class="t-m-image"><img src="assets/img/logo.png" width="60" /></div>
+				<div class="t-m-text">FE World Bank</div>
+				<div class="t-m-load"><img src="assets/img/infinity.gif" width="60" /></div>
+			</div>
+		</header>
+		<section class="mainframe">
+			<div class="m-margin">
+				<section class="m-m-o-left" ng-controller="form">
+					<section class="m-m-o-l-card year">
+						<div class="overflow">
+							<header class="m-m-o-l-header">
+								<div class="m-m-o-l-h-img"><img src="assets/img/ico_consulta.png" width="30" /></div>
+								<div class="m-m-o-l-h-content">Find by year</div>
+							</header>
+							<section class="m-m-o-l-content">
+								<rzslider rz-slider-model="slider.minValue" rz-slider-high="slider.maxValue" rz-slider-options="slider.options"></rzslider>
+							</section>
+						</div>
+					</section>
+					<section class="m-m-o-l-card country">
+						<div class="overflow">
+							<header class="m-m-o-l-header">
+								<div class="m-m-o-l-hflow">
+									<div class="m-m-o-l-h-img"><img src="assets/img/ico_consulta.png" width="30" /></div>
+									<div class="m-m-o-l-h-content">Find by country</div>
+								</div>
+							</header>
+							<section class="m-m-o-l-content">
+								<multiple-autocomplete ng-model="countries" object-property="coName" suggestions-arr="country">
+								</multiple-autocomplete>
+							</section>
+						</div>
+					</section>
+					<section class="m-m-o-l-card indicator">
+						<div class="overflow">
+							<header class="m-m-o-l-header">
+								<div class="m-m-o-l-h-img"><img src="assets/img/ico_consulta.png" width="30" /></div>
+								<div class="m-m-o-l-h-content">Choose an indicator</div>
+							</header>
+							<section class="m-m-o-l-content">
+								<select class="m-m-o-l-c-select" ng-model="indicatorSelected">
+									<option disabled value="">Select Indicator</option>
+									<option ng-repeat="item in indicator" value="{{item.inCode}}">{{item.inName}}</option>
+								</select>
+							</section>
+						</div>
+					</section>
+					<section class="m-m-o-l-card submit">
+						<div class="overflow">
+							<section class="m-m-o-l-content csend">
+								<button type="submit" ng-click="validator()">Preview Chart</button>
+							</section>
+						</div>
+					</section>
+				</section>
+				<section class="m-m-o-right">
+					<section class="m-m-o-l-card graphic" ng-controller="graphic">
+						<div class="overflow">
+							<header class="m-m-o-l-header center">Chart Result</header>
+							<section class="m-m-o-l-content">
+								<nvd3 options="options" data="data"></nvd3>
+							</section>
+						</div>
+					</section>
+				</section>
+			</div>
+		</section>
+		<footer>
+			<div class="f-margin"><p>Mini proyecto web</p> <p>José Fernando Carreón Díaz de León</p></div>
+		</footer>
+	</body>
+</html>

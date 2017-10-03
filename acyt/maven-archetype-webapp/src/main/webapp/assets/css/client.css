@@ -1,0 +1,309 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'Roboto Normal';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(../css/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+body {
+	margin: 0;
+	font-family: 'Roboto Normal';
+	line-height: 1.5em;
+	font-size: 14px;
+	background: #EEE;
+}
+div, button, section, header, footer, input, textarea, article, aside {
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+}
+img{
+	border:0px;
+}
+header.top {
+    z-index: 1000;
+    background: #3F51B5;
+    -webkit-box-shadow: 0 0 13px rgba(0,0,0,0.47);
+	-moz-box-shadow: 0 0 13px rgba(0,0,0,0.47);
+	-ms-box-shadow: 0 0 13px rgba(0,0,0,0.47);
+	-o-box-shadow: 0 0 13px rgba(0,0,0,0.47);
+	box-shadow: 0 0 13px rgba(0,0,0,0.47);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.t-margin {
+    width: 98%;
+    height: 70px;
+    margin: auto;
+    overflow: hidden;
+}
+.m-m-o-l-h-img {
+    float: left;
+}
+.m-m-o-l-h-content {
+    float: left;
+    margin: 5px 10px;
+    font-size: 16px;
+}
+.m-m-l-h-action {
+    overflow: hidden;
+}
+button.m-m-l-h-a-btn.mark {
+    float: left;
+}
+select.m-m-o-l-c-select {
+    width: 100%;
+}
+button.m-m-l-h-a-btn.unmark {
+    float: right;
+}
+input, button, select {
+    padding: 6px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,0.15);
+	-ms-box-shadow: 0 0 3px rgba(0,0,0,0.15);
+	-o-box-shadow: 0 0 3px rgba(0,0,0,0.15);
+	box-shadow: 0 0 3px rgba(0,0,0,0.15);
+}
+.m-m-o-l-card > .overflow, input, button{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+button {
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+	-ms-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+	-o-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    cursor: pointer;
+    background: #3f51b5;
+    color: #FFF;
+    border: 1px solid transparent;
+}
+.m-m-o-l-h-content.cinput {
+    margin: 0 10px;
+}
+section.m-m-o-l-content.csend {
+    text-align: center;
+}
+.m-m-o-l-h-content.input {
+    margin: 0 10px;
+}
+.t-m-image {
+    float: left;
+    margin-top: 5px;
+}
+.t-m-text {
+    float: left;
+    font-size: 23px;
+    color: #FFF;
+    margin: 24px 10px 0;
+}
+.t-m-load {
+    float: right;
+    background: #283593;
+    width: 70px;
+    height: 66px;
+    text-align: center;
+    padding-top: 4px;
+}
+section.mainframe {
+    margin-top: 70px;
+    overflow: hidden;
+}
+.m-margin {
+	width: 98%;
+	margin: 15px auto;
+	overflow: hidden;
+}
+section.m-m-o-left {
+    width: 25%;
+    float: left;
+}
+section.m-m-o-right {
+    float: left;
+    width: 75%;
+}
+.m-m-o-l-card {
+    margin: 10px;
+}
+.m-m-o-l-card > .overflow{
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	-ms-box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	-o-box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	background: #FFF;
+}
+.f-margin {
+    width: 98%;
+    margin: 50px auto 0;
+    text-align: center;
+    font-size: 20px;
+    color: #aaa;
+}
+.m-m-o-l-c-country {
+    height: 210px;
+    overflow-y: scroll;
+}
+.m-m-o-l-c-btn {
+    margin: 10px 0;
+}
+.m-m-o-l-c-btn > button {
+    width: 100%;
+}
+section.m-m-o-l-content.csend > button {
+    width: 100%;
+}
+.m-m-o-l-c-c {
+    padding: 2px 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.m-m-o-l-c-c:hover {
+    background: #EEE;
+}
+.m-m-o-l-c-content {
+    height: 125px;
+    overflow-y: scroll;
+}
+input.m-m-o-l-h-c-input {
+    width: 143px;
+}
+header.m-m-o-l-header {
+    margin: 10px 10px 0;
+    padding: 10px 0;
+    overflow: hidden;
+    border-bottom: 1px solid #EAEAEA;
+}
+section.m-m-o-l-content {
+    margin: 0px 10px 10px;
+    padding: 10px 0;
+}
+.m-m-o-l-hflow {
+    overflow: hidden;
+}
+@media only screen and (min-width: 700px) and (max-width: 1099px) {
+	section.m-m-o-left {
+		width: auto;
+		float: none;
+		overflow: auto;
+	}
+	section.m-m-o-right {
+		width: auto;
+		float: none;
+	}
+	.m-m-o-l-card.year, .m-m-o-l-card.country, .m-m-o-l-card.indicator, .m-m-o-l-card.submit{
+		float:left;
+		margin: 0px;
+	}
+	.m-m-o-l-card > .overflow{
+		min-height: 140px;
+	}
+	.m-m-o-l-card.year{
+		width: 30%;
+	}
+	.m-m-o-l-card.country{
+		width: 70%;
+	}
+	.m-m-o-l-card.indicator{
+		width: 50%;
+	}
+	.m-m-o-l-card.submit{
+		width: 50%;
+	}
+	.m-m-o-l-card.graphic{
+		margin: 10px 0;
+	}
+	.overflow {
+		margin: 10px 10px;
+	}
+	.m-m-o-l-hflow {
+		overflow: initial;
+		float: left;
+	}
+	.m-m-l-h-action {
+		float: right;
+		margin: 0px;
+	}
+	input.m-m-o-l-h-c-input {
+		width: 150px;
+	}
+	button.m-m-l-h-a-btn.mark {
+		float: none;
+	}
+	button.m-m-l-h-a-btn.unmark {
+		float: none;
+	}
+}
+@media only screen and (min-width: 0px) and (max-width: 699px) {
+	section.m-m-o-left {
+		width: auto;
+		float: none;
+		overflow: auto;
+	}
+	section.m-m-o-right {
+		width: auto;
+		float: none;
+	}
+	.m-m-o-l-card.year, .m-m-o-l-card.country, .m-m-o-l-card.indicator, .m-m-o-l-card.submit{
+		float:left;
+		margin: 0px;
+	}
+	.m-m-o-l-card.year{
+		width: 100%;
+	}
+	.m-m-o-l-card.country{
+		width: 100%;
+	}
+	.m-m-o-l-card.indicator{
+		width: 100%;
+	}
+	.m-m-o-l-card.submit{
+		width: 100%;
+	}
+	.m-m-o-l-card.graphic{
+		margin: 10px 0;
+	}
+	.overflow {
+		margin: 10px 10px;
+	}
+	.t-m-load {
+		display: none;
+	}
+	.t-m-image {
+		float: none;
+		width: 60px;
+		margin: auto;
+	}
+	button.m-m-l-h-a-btn.mark {
+		float: left;
+	}
+	button.m-m-l-h-a-btn.unmark {
+		float: right;
+	}
+	.t-m-text {
+		width: 240px;
+		margin: auto;
+		float: none;
+		text-align: center;
+	}
+	.t-margin {
+		height: 100px;
+	}
+	section.mainframe {
+		margin-top: 100px;
+	}
+}
