@@ -3,7 +3,7 @@ This is the beginning to test the web application. I've used Spring framework on
 
 # Instalation & usage
 
-1. Download economic.sql from datasource folder.
+1. Download economic.rar from root folder.
 2. Create a database in MySQL called "economic".
 3. Import the sql File into import section.
 4. Create or update an user with "root" name and without password.
